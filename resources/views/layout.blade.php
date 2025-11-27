@@ -55,6 +55,33 @@
           0%, 100% { opacity: 0.5; }
           50% { opacity: 1; }
         }
+
+        @keyframes typing {
+          0% { width: 0 }
+          50% { width: 11ch }
+          100% { width: 0 }
+        }
+
+        @keyframes cursorBlink {
+          0%, 100% { border-color: transparent }
+          50% { border-color: #00eaff }
+        }
+
+        .typing-name {
+          width: 0;
+          animation: typing 7s steps(12, end) infinite, cursorBlink 0.7s infinite;
+          text-shadow: 0 0 20px #00eaff;
+        }
+        @keyframes waveOpacity {
+        0%   { opacity: 0.2; transform: translateY(0px); }
+        50%  { opacity: 1; transform: translateY(-4px); }
+        100% { opacity: 0.2; transform: translateY(0px); }
+        }
+
+        .wave-letter {
+        display: inline-block;
+        animation: waveOpacity 1.8s ease-in-out infinite;
+        }
     </style>
     @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
         @vite(['resources/css/app.css', 'resources/js/app.js'])
