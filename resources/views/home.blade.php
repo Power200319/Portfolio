@@ -13,7 +13,7 @@
         <div class="absolute bottom-20 right-20 w-96 h-96 bg-cyan-300 rounded-full blur-3xl animate-pulse delay-1000"></div>
     </div>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 animate-fade-in">
         <div class="grid lg:grid-cols-2 gap-16 items-center min-h-screen">
             <!-- Left Side -->
             <div class="animate-slide-up">
@@ -25,23 +25,27 @@
                             text-[#00eaff] font-semibold typing-name">Peng Samnang</span>
                 </h1>
                 <p class="p-2 text-lg md:text-xl text-[#c7c7c7] leading-relaxed">
-                    <span class="wave-letter" style="animation-delay:0s">I</span>
-                    <span class="wave-letter" style="animation-delay:0.05s">'</span>
-                    <span class="wave-letter" style="animation-delay:0.1s">m</span>
+                    <span class="wave-letter" style="animation-delay:0s">F</span>
+                    <span class="wave-letter" style="animation-delay:0.05s">u</span>
+                    <span class="wave-letter" style="animation-delay:0.1s">l</span>
                     <span class="wave-letter" style="animation-delay:0.15s"> </span>
-                    <span class="wave-letter" style="animation-delay:0.2s">a</span>
-                    <span class="wave-letter" style="animation-delay:0.25s"> </span>
-                    <span class="wave-letter" style="animation-delay:0.3s">D</span>
-                    <span class="wave-letter" style="animation-delay:0.35s">e</span>
-                    <span class="wave-letter" style="animation-delay:0.4s">v</span>
-                    <span class="wave-letter" style="animation-delay:0.45s">e</span>
-                    <span class="wave-letter" style="animation-delay:0.5s">l</span>
-                    <span class="wave-letter" style="animation-delay:0.55s">o</span>
-                    <span class="wave-letter" style="animation-delay:0.6s">p</span>
+                    <span class="wave-letter" style="animation-delay:0.2s">l</span>
+                    <span class="wave-letter" style="animation-delay:0.25s">- </span>
+                    <span class="wave-letter" style="animation-delay:0.3s">S</span>
+                    <span class="wave-letter" style="animation-delay:0.35s">t</span>
+                    <span class="wave-letter" style="animation-delay:0.4s">a</span>
+                    <span class="wave-letter" style="animation-delay:0.45s">c</span>
+                    <span class="wave-letter" style="animation-delay:0.5s">k</span>
+                    <span class="wave-letter" style="animation-delay:0.55s">-</span>
+                    <span class="wave-letter" style="animation-delay:0.6s">D</span>
                     <span class="wave-letter" style="animation-delay:0.65s">e</span>
-                    <span class="wave-letter" style="animation-delay:0.7s">r</span>
-                    <span class="wave-letter" style="animation-delay:0.75s"></span>
-                    <!-- <span class="wave-letter" style="animation-delay:0.8s"> </span> -->
+                    <span class="wave-letter" style="animation-delay:0.7s">v</span>
+                    <span class="wave-letter" style="animation-delay:0.75s">e</span>
+                    <span class="wave-letter" style="animation-delay:0.8s">l</span>
+                    <span class="wave-letter" style="animation-delay:0.85s">o</span>
+                    <span class="wave-letter" style="animation-delay:0.9s">p</span>
+                    <span class="wave-letter" style="animation-delay:0.95s">e</span>
+                    <span class="wave-letter" style="animation-delay:1s">r</span>
 
                     <!-- continue with your text ... -->
                 </p>
@@ -83,19 +87,32 @@
 
                 <!-- Profile Image Container -->
                 <div class="relative z-10 flex items-center justify-center">
-                    <div class="relative group">
-                        <!-- Glowing Border -->
-                        <div class="absolute inset-0 w-80 h-80 border-4 border-cyan-400 rounded-full opacity-60 group-hover:opacity-80 transition-opacity duration-500" style="box-shadow: 0 0 40px #00eaff;"></div>
+                    <div class="relative w-80 h-80 group flex items-center justify-center">
 
-                        <!-- Image -->
-                        <div class="w-80 h-80 overflow-hidden rounded-full relative group-hover:scale-105 transition-transform duration-500">
-                            <img src="/image/profile.jpg" alt="Profile" class="w-50 h-50 object-cover transition-transform duration-500 group-hover:scale-110" style="filter: brightness(1.1) contrast(1.1);">
+                        <!-- OUTER GLOWING BORDER -->
+                        <div class="absolute inset-0 rounded-full border-4 border-cyan-400 
+                            opacity-60 group-hover:opacity-90 transition-all duration-500
+                            pointer-events-none"
+                            style="box-shadow: 0 0 45px #00eaff;">
                         </div>
 
-                        <!-- Inner Glow -->
-                        <div class="absolute inset-4 border-2 border-cyan-300 rounded-full opacity-40" style="box-shadow: inset 0 0 20px rgba(0, 234, 255, 0.5);"></div>
+                        <!-- INNER GLOW RING -->
+                        <div class="absolute inset-4 rounded-full border-2 border-cyan-300 opacity-40
+                            pointer-events-none "
+                            style="box-shadow: inset 0 0 30px rgba(0, 234, 255, 0.6);">
+                        </div>
+
+                        <!-- IMAGE ON TOP -->
+                        <div class="relative  rounded-full overflow-hidden w-72 h-72 
+                            group-hover:scale-105 transition-transform duration-500 z-20">
+                            <img src="/image/profile.jpg"
+                                class="w-71 h-71 object-cover group-hover:scale-110 transition-transform duration-500"
+                                style="filter: brightness(1.15) contrast(1.1);">
+                        </div>
+
                     </div>
                 </div>
+
 
                 <!-- Floating Particles -->
                 <div class="absolute top-10 right-10 w-3 h-3 bg-cyan-400 rounded-full animate-bounce opacity-70" style="box-shadow: 0 0 15px #00eaff; animation-delay: 0s;"></div>
@@ -108,7 +125,7 @@
 </section>
 
 <!-- Experience Section -->
-<section id="experience" class="py-24 relative overflow-hidden" style="background: #0f1624; position: relative; overflow: hidden;">
+<section id="experience" class="py-4 relative overflow-hidden" style="background: #0f1624; position: relative; overflow: hidden;">
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div class="text-center mb-20">
@@ -117,12 +134,12 @@
                     💼 Experience
                 </span>
             </div>
-            <h2 class="text-5xl md:text-6xl font-bold text-white mb-6 animate-slide-up">
-                Professional Journey
-            </h2>
-            <p class="text-xl text-blue-100 max-w-3xl mx-auto animate-slide-up delay-1">
+            <!-- <h2 class="text-5xl md:text-6xl font-bold text-white mb-6 animate-slide-up">
+                💼 Experience
+            </h2> -->
+            <!-- <p class="text-xl text-blue-100 max-w-3xl mx-auto animate-slide-up delay-1">
                 A timeline of my career growth and key achievements in web development
-            </p>
+            </p> -->
         </div>
 
         <div class="relative max-w-5xl mx-auto">
@@ -239,9 +256,9 @@
             <h2 class="text-5xl md:text-6xl font-bold bg-linear-to-r from-gray-900 via-blue-800 to-purple-800 bg-clip-text text-transparent mb-6 animate-slide-up">
                 Technologies I Use
             </h2>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto animate-slide-up delay-1">
+            <!-- <p class="text-xl text-gray-600 max-w-3xl mx-auto animate-slide-up delay-1">
                 A comprehensive toolkit of modern technologies and frameworks I leverage to build exceptional digital experiences
-            </p>
+            </p> -->
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
