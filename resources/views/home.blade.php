@@ -25,26 +25,26 @@
                             text-[#00eaff] font-semibold typing-name">Peng Samnang</span>
                 </h1>
                 <p class="p-2 text-lg md:text-xl text-[#c7c7c7] leading-relaxed">
-                <span class="wave-letter" style="animation-delay:0s">I</span>
-                <span class="wave-letter" style="animation-delay:0.05s">'</span>
-                <span class="wave-letter" style="animation-delay:0.1s">m</span>
-                <span class="wave-letter" style="animation-delay:0.15s"> </span>
-                <span class="wave-letter" style="animation-delay:0.2s">a</span>
-                <span class="wave-letter" style="animation-delay:0.25s"> </span>
-                <span class="wave-letter" style="animation-delay:0.3s">D</span>
-                <span class="wave-letter" style="animation-delay:0.35s">e</span>
-                <span class="wave-letter" style="animation-delay:0.4s">v</span>
-                <span class="wave-letter" style="animation-delay:0.45s">e</span>
-                <span class="wave-letter" style="animation-delay:0.5s">l</span>
-                <span class="wave-letter" style="animation-delay:0.55s">o</span>
-                <span class="wave-letter" style="animation-delay:0.6s">p</span>
-                <span class="wave-letter" style="animation-delay:0.65s">e</span>
-                <span class="wave-letter" style="animation-delay:0.7s">r</span>
-                <span class="wave-letter" style="animation-delay:0.75s"></span>
-    <!-- <span class="wave-letter" style="animation-delay:0.8s"> </span> -->
+                    <span class="wave-letter" style="animation-delay:0s">I</span>
+                    <span class="wave-letter" style="animation-delay:0.05s">'</span>
+                    <span class="wave-letter" style="animation-delay:0.1s">m</span>
+                    <span class="wave-letter" style="animation-delay:0.15s"> </span>
+                    <span class="wave-letter" style="animation-delay:0.2s">a</span>
+                    <span class="wave-letter" style="animation-delay:0.25s"> </span>
+                    <span class="wave-letter" style="animation-delay:0.3s">D</span>
+                    <span class="wave-letter" style="animation-delay:0.35s">e</span>
+                    <span class="wave-letter" style="animation-delay:0.4s">v</span>
+                    <span class="wave-letter" style="animation-delay:0.45s">e</span>
+                    <span class="wave-letter" style="animation-delay:0.5s">l</span>
+                    <span class="wave-letter" style="animation-delay:0.55s">o</span>
+                    <span class="wave-letter" style="animation-delay:0.6s">p</span>
+                    <span class="wave-letter" style="animation-delay:0.65s">e</span>
+                    <span class="wave-letter" style="animation-delay:0.7s">r</span>
+                    <span class="wave-letter" style="animation-delay:0.75s"></span>
+                    <!-- <span class="wave-letter" style="animation-delay:0.8s"> </span> -->
 
-    <!-- continue with your text ... -->
-</p>
+                    <!-- continue with your text ... -->
+                </p>
 
 
                 <!-- Skill Tags -->
@@ -76,30 +76,32 @@
 
             <!-- Right Side -->
             <div class="animate-slide-up delay-2 relative">
-                <!-- Hexagon Background Glow -->
+                <!-- Circular Background Glow -->
                 <div class="absolute inset-0 flex items-center justify-center">
-                    <div class="w-80 h-80 rounded-3xl rotate-45 blur-xl opacity-30 animate-pulse" style="background: linear-gradient(to bottom right, #00eaff, #00b4d8); clip-path: polygon(50% 0%, 93.3% 25%, 93.3% 75%, 50% 100%, 6.7% 75%, 6.7% 25%);"></div>
+                    <div class="w-80 h-80 rounded-full blur-xl opacity-30 animate-pulse" style="background: linear-gradient(135deg, #00eaff, #00b4d8);"></div>
                 </div>
 
                 <!-- Profile Image Container -->
                 <div class="relative z-10 flex items-center justify-center">
-                    <div class="relative">
-                        <!-- Hexagon Border -->
-                        <div class="absolute inset-0 w-80 h-80 border-4 border-cyan-400 rounded-3xl rotate-45 opacity-60" style="clip-path: polygon(50% 0%, 93.3% 25%, 93.3% 75%, 50% 100%, 6.7% 75%, 6.7% 25%); box-shadow: 0 0 40px #00eaff;"></div>
+                    <div class="relative group">
+                        <!-- Glowing Border -->
+                        <div class="absolute inset-0 w-80 h-80 border-4 border-cyan-400 rounded-full opacity-60 group-hover:opacity-80 transition-opacity duration-500" style="box-shadow: 0 0 40px #00eaff;"></div>
 
                         <!-- Image -->
-                        <div class="w-80 h-80 overflow-hidden rounded-3xl rotate-45 relative" style="clip-path: polygon(50% 0%, 93.3% 25%, 93.3% 75%, 50% 100%, 6.7% 75%, 6.7% 25%);">
-                            <img src="/image/profile.jpg" alt="Profile" class="w-full h-full object-cover -rotate-45 scale-125" style="filter: brightness(1.1) contrast(1.1);">
+                        <div class="w-80 h-80 overflow-hidden rounded-full relative group-hover:scale-105 transition-transform duration-500">
+                            <img src="/image/profile.jpg" alt="Profile" class="w-50 h-50 object-cover transition-transform duration-500 group-hover:scale-110" style="filter: brightness(1.1) contrast(1.1);">
                         </div>
 
                         <!-- Inner Glow -->
-                        <div class="absolute inset-4 border-2 border-cyan-300 rounded-2xl rotate-45 opacity-40" style="clip-path: polygon(50% 0%, 93.3% 25%, 93.3% 75%, 50% 100%, 6.7% 75%, 6.7% 25%); box-shadow: inset 0 0 20px rgba(0, 234, 255, 0.5);"></div>
+                        <div class="absolute inset-4 border-2 border-cyan-300 rounded-full opacity-40" style="box-shadow: inset 0 0 20px rgba(0, 234, 255, 0.5);"></div>
                     </div>
                 </div>
 
-                <!-- Floating Elements -->
-                <div class="absolute top-10 right-10 w-4 h-4 bg-cyan-400 rounded-full animate-bounce opacity-60" style="box-shadow: 0 0 10px #00eaff;"></div>
-                <div class="absolute bottom-20 left-10 w-6 h-6 bg-cyan-300 rounded-full animate-pulse delay-500 opacity-40" style="box-shadow: 0 0 15px #00eaff;"></div>
+                <!-- Floating Particles -->
+                <div class="absolute top-10 right-10 w-3 h-3 bg-cyan-400 rounded-full animate-bounce opacity-70" style="box-shadow: 0 0 15px #00eaff; animation-delay: 0s;"></div>
+                <div class="absolute bottom-20 left-10 w-4 h-4 bg-cyan-300 rounded-full animate-pulse opacity-50" style="box-shadow: 0 0 20px #00eaff; animation-delay: 0.5s;"></div>
+                <div class="absolute top-1/2 right-5 w-2 h-2 bg-cyan-500 rounded-full animate-ping opacity-60" style="box-shadow: 0 0 10px #00eaff; animation-delay: 1s;"></div>
+                <div class="absolute bottom-10 right-1/4 w-3 h-3 bg-cyan-200 rounded-full animate-pulse opacity-40" style="box-shadow: 0 0 12px #00eaff; animation-delay: 1.5s;"></div>
             </div>
         </div>
     </div>
