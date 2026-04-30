@@ -147,6 +147,8 @@ const projects = [
       "Role-based access for admins and customers",
     ],
     status: "Delivered",
+    href: "https://front-end-logistic.vercel.app/",
+    cta: "View Project",
   },
   {
     title: "Rithya Swimming School Website",
@@ -170,6 +172,8 @@ const projects = [
       "Cloudinary media storage integration",
     ],
     status: "Delivered",
+    href: "https://www.sorithya.com/",
+    cta: "Visit Website",
   },
   {
     title: "University Management System (UMS)",
@@ -195,6 +199,8 @@ const projects = [
       "Custom role-permission management",
     ],
     status: "Ongoing",
+    href: "https://front-end-ums.vercel.app/",
+    cta: "View Project",
   },
   {
     title: "AI Face Recognition Attendance System",
@@ -218,6 +224,8 @@ const projects = [
       "Telegram alerts for unknown faces and late attendance",
     ],
     status: "Featured",
+    href: "https://frontend-ai-face.vercel.app/",
+    cta: "View Project",
   },
 ];
 
@@ -900,6 +908,16 @@ function App() {
                   </span>
                 ))}
               </div>
+              {featuredProject.href ? (
+                <a
+                  className="project-link"
+                  href={featuredProject.href}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {featuredProject.cta ?? "View Project"}
+                </a>
+              ) : null}
             </article>
 
             <div className="projects-grid secondary-projects">
@@ -935,6 +953,16 @@ function App() {
                       </span>
                     ))}
                   </div>
+                  {project.href ? (
+                    <a
+                      className="project-link"
+                      href={project.href}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {project.cta ?? "View Project"}
+                    </a>
+                  ) : null}
                 </article>
               ))}
             </div>
