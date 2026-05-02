@@ -1,0 +1,22 @@
+{
+  "name": "Peng Samnang Portfolio",
+  "short_name": "Peng Samnang",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#09101d",
+  "theme_color": "#09101d",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/profile.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}

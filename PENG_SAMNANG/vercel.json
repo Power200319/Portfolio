@@ -1,4 +1,17 @@
 {
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "pengsamnang.site"
+        }
+      ],
+      "destination": "https://www.pengsamnang.site/:path*",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/",

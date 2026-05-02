@@ -2,14 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/jpeg" href="/profile.jpg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/profile.jpg" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Peng Samnang</title>
     <meta
       name="description"
       content="Peng Samnang is a Full-Stack Web Developer building modern web applications with React, Django, PostgreSQL, and REST APIs."
     />
+    <meta name="robots" content="index,follow" />
     <meta name="theme-color" content="#09101d" />
 
     <meta property="og:type" content="website" />
@@ -36,6 +39,21 @@
     />
     <meta name="twitter:image" content="https://www.pengsamnang.site/share-preview-v2.png" />
     <link rel="canonical" href="https://www.pengsamnang.site/" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Peng Samnang",
+        "url": "https://www.pengsamnang.site/",
+        "image": "https://www.pengsamnang.site/profile.jpg",
+        "logo": "https://www.pengsamnang.site/favicon.svg",
+        "jobTitle": "Full-Stack Web Developer",
+        "sameAs": [
+          "https://github.com/pengsamnang",
+          "https://www.linkedin.com/in/peng-samnang-740363317/"
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
