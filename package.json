@@ -1,5 +1,12 @@
 {
+  "scripts": {
+    "dev": "npm --prefix PENG_SAMNANG run dev",
+    "build": "npm --prefix PENG_SAMNANG run build",
+    "preview": "npm --prefix PENG_SAMNANG run preview"
+  },
   "dependencies": {
-    "@vercel/speed-insights": "^2.0.0"
+    "@vercel/speed-insights": "^2.0.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
   }
 }
